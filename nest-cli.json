@@ -1,0 +1,21 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "watchAssets": true,
+    "assets": [
+      {
+        "include": "common/seed/*.**",
+        "outDir": "dist/src/"
+      },
+      {
+        "include": "common/email/template/*.**",
+        "outDir": "dist/src/"
+      },
+      {
+        "include": "admin/service/data/*.json",
+        "outDir": "dist/src/"
+      }
+    ]
+  }
+}
