@@ -19,8 +19,8 @@ const config = {
   sendGrid: {
     apiKey: env('SENDGRID_API_KEY'),
     from: {
-      name: env('APP_EMAIL_SENDER_NAME'),
-      address: env('APP_EMAIL_SENDER_ADDRESS'),
+      name: env('APP_SENDER_NAME'),
+      address: env('APP_SENDER_ADDRESS'),
     },
   },
   sentry: {

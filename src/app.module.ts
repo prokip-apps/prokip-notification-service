@@ -1,7 +1,7 @@
 import { Global, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { EventEmitterModule } from '@nestjs/event-emitter';
-import { RedisModule } from './common/redis/cache.module';
+// import { RedisModule } from './common/redis/cache.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SmsModule } from './sms/sms.module';
@@ -16,7 +16,7 @@ import config from './app.config';
       isGlobal: true,
       load: [config],
     }),
-    RedisModule,
+    // RedisModule,
     SmsModule,
   ],
   controllers: [AppController],

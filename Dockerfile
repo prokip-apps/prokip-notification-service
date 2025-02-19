@@ -13,7 +13,4 @@ RUN npm install  --legacy-peer-deps
 COPY . .
 RUN npm run build
 
-RUN chmod +x start.sh
-
-# CMD ["node", "dist/src/main"]
-CMD ./start.sh
+CMD ["node", "dist/src/main"]
