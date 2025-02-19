@@ -77,6 +77,7 @@ export class AfricasTalkingService {
       .post('https://api.africastalking.com/version1/messaging', form, {
         headers: {
           Accept: 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
           apiKey: credentials.apiKey,
           ...form.getHeaders(),
         },
